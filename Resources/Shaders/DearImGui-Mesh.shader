@@ -17,7 +17,7 @@
             HLSLPROGRAM
             #pragma vertex ImGuiPassVertex
             #pragma fragment ImGuiPassFrag
-            #include "Assets/dear-imgui-unity/Resources/Shaders/PassesUniversal.hlsl"
+            #include "Packages/com.realgames.dear-imgui/Shaders/PassesUniversal.hlsl"
             ENDHLSL
         }
     }
@@ -39,7 +39,7 @@
             CGPROGRAM
             #pragma vertex ImGuiPassVertex
             #pragma fragment ImGuiPassFrag
-            #include "Assets/dear-imgui-unity/Resources/Shaders/PassesBuiltin.hlsl"
+            #include "Packages/com.realgames.dear-imgui/Resources/Shaders/PassesBuiltin.hlsl"
             ENDCG
         }
     }
