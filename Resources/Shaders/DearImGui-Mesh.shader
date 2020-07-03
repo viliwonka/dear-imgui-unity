@@ -17,7 +17,7 @@
             HLSLPROGRAM
             #pragma vertex ImGuiPassVertex
             #pragma fragment ImGuiPassFrag
-            #include "Packages/com.realgames.dear-imgui/Shaders/PassesUniversal.hlsl"
+            #include "Packages/com.realgames.dear-imgui/Resources/Shaders/PassesUniversal.hlsl"
             ENDHLSL
         }
     }
