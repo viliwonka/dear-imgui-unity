@@ -47,7 +47,11 @@ namespace ImGuiNET.Unity
         {
             io.SetClipboardTextFn = Marshal.GetFunctionPointerForDelegate(_setClipboardText);
             io.GetClipboardTextFn = Marshal.GetFunctionPointerForDelegate(_getClipboardText);
-            io.ImeSetInputScreenPosFn = Marshal.GetFunctionPointerForDelegate(_imeSetInputScreenPos);
+            
+            //io.ImeSetInputScreenPosFn = Marshal.GetFunctionPointerForDelegate(_imeSetInputScreenPos);
+            
+            
+
 #if IMGUI_FEATURE_CUSTOM_ASSERT
             io.SetBackendPlatformUserData<CustomAssertData>(new CustomAssertData
             {
@@ -61,7 +65,7 @@ namespace ImGuiNET.Unity
         {
             io.SetClipboardTextFn = IntPtr.Zero;
             io.GetClipboardTextFn = IntPtr.Zero;
-            io.ImeSetInputScreenPosFn = IntPtr.Zero;
+            //io.ImeSetInputScreenPosFn = IntPtr.Zero;
 #if IMGUI_FEATURE_CUSTOM_ASSERT
             io.SetBackendPlatformUserData<CustomAssertData>(null);
 #endif

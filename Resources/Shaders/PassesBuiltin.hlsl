@@ -2,7 +2,7 @@
 #define DEARIMGUI_BUILTIN_INCLUDED
 
 #include "UnityCG.cginc"
-#include "Packages/com.realgames.dear-imgui/Resources/Shaders/Common.hlsl"
+#include "Assets/dear-imgui-unity/Resources/Shaders/Common.hlsl"
 
 sampler2D _Tex;
 

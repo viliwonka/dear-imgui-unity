@@ -17,7 +17,8 @@
             HLSLPROGRAM
             #pragma vertex vert
             #pragma fragment ImGuiPassFrag
-            #include "Packages/com.realgames.dear-imgui/Resources/Shaders/PassesUniversal.hlsl"
+            //#include "Packages/com.realgames.dear-imgui/Resources/Shaders/PassesUniversal.hlsl"
+            #include "Assets/dear-imgui-unity/Resources/Shaders/PassesUniversal.hlsl"
 
             StructuredBuffer<ImVert> _Vertices;
             int _BaseVertex;
@@ -35,7 +36,7 @@
         }
     }
 
-    // shader for builtin rendering
+    // shader for builtin rendering 
     SubShader
     {
         Tags { "Queue"="Transparent" "IgnoreProjector"="True" "RenderType"="Transparent" "PreviewType"="Plane" }
@@ -52,7 +53,7 @@
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment ImGuiPassFrag
-            #include "Packages/com.realgames.dear-imgui/Resources/Shaders/PassesBuiltin.hlsl"
+            #include "Assets/dear-imgui-unity/Resources/Shaders/PassesBuiltin.hlsl"
 
             StructuredBuffer<ImVert> _Vertices;
             int _BaseVertex;

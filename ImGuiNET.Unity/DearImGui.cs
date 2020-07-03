@@ -18,7 +18,7 @@ namespace ImGuiNET.Unity
         IImGuiPlatform _platform;
         CommandBuffer _cmd;
         bool _usingURP;
-
+        bool _enableDocking = true;
         public event System.Action Layout;  // Layout event for *this* ImGui instance
         [SerializeField] bool _doGlobalLayout = true; // do global/default Layout event too
 
@@ -46,6 +46,12 @@ namespace ImGuiNET.Unity
         void Awake()
         {
             _context = ImGuiUn.CreateUnityContext();
+
+            if (_enableDocking)
+            {
+                ImGui.GetIO().ConfigFlags |= ImGuiConfigFlags.DockingEnable;
+            }
+
         }
 
         void OnDestroy()
