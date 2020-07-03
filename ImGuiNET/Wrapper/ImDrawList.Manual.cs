@@ -1,5 +1,5 @@
-﻿using System.Text;
-using UnityEngine;
+﻿using System.Numerics;
+using System.Text;
 
 namespace ImGuiNET
 {
